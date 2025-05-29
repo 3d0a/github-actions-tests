@@ -1,0 +1,11 @@
+name: 02-Workflow-events
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    test-run:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Current workflow was ran from ${{github.event_name}}"
