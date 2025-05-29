@@ -1,0 +1,14 @@
+name: 05 Filter events
+on:
+    pull_request:
+        branches:
+          - main
+        types: 
+          - opened
+
+jobs:
+    Start-of-workflow:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Tell that pull request is happened
+            run: echo "Pull request is happened"
