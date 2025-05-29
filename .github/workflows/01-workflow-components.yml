@@ -1,0 +1,20 @@
+name: 01-workflow-components
+
+on: push
+
+jobs:
+    my-first-job:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Hello world"
+
+    my-second-job:
+        runs-on: ubuntu-latest
+        steps:
+          - run: |
+                exit 1
+
+    my-third-job:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Bue world!"
